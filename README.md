@@ -1,19 +1,14 @@
-## Getting Started
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+# Архитектура ПО. Семинар 05.  Горизонтальные уровни и вертикальные срезы архитектуры 
 
-## Folder Structure
+1. Cформировать UML-диаграмму, отвечающей задаче: Необходимо разделить на горизонтальные уровни «Редактор 3D графики”. Один пользователь. Программа работает на одном компьютере без выхода в сеть.
 
-The workspace contains two folders by default, where:
+    Что видит пользователь, как взаимодействует? (Панель загрузки, блок редактирования, блок просмотра …).
+    Какие задачи можно делать – функции системы? (Загрузить 3D модель, рассмотреть 3D модель, создать новую, редактировать вершины, текстуры, сделать рендер, сохранить рендер… ).
+    Какие и где хранятся данные? (файлы 3D моделей, рендеры, анимация .., в файловой системе компьютера).
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+    Предложить варианты связывания всех уровней – сценарии использования. 3-4 сценария. Сквозная функция – создать новую 3D модель, сделать рендер для печати на принтере…
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+2. Реализовать архитектуру из приложенной UML-диаграммы к уроку
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
-# SoftArchSeminar05
+![Изображение](/UML-diagram.jpg "UML-диаграмма")
